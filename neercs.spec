@@ -8,7 +8,7 @@ Name:		%{name}
 Version:	%{version}
 Release:	%{release}
 License:	WTFPL
-Group:		System/
+Group:		Terminals
 URL:		http://caca.zoy.org/wiki/neercs
 Source0:	%{name}-%{version}.tar.bz2
 Source1:	neercs.pam
