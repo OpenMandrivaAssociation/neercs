@@ -1,6 +1,6 @@
 %define name	neercs
 %define version	0.0
-%define svn	4079
+%define svn	4342
 %define release	%mkrel 0.r%svn.1
 
 Summary:	Caca screen manager
@@ -12,7 +12,8 @@ Group:		System/
 URL:		http://caca.zoy.org/wiki/neercs
 Source0:	%{name}-%{version}.tar.bz2
 Source1:	neercs.pam
-BuildRequires:	pam-devel libcaca-devel
+BuildRequires:	pam-devel python-devel
+BuildRequires:	libcaca-devel >= 0.99-0.beta17
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
@@ -34,7 +35,7 @@ Like GNU screen, it allows you to detach a session from a terminal, but provides
 %make
 
 %install
-rm -rf % {buildroot}
+rm -rf %{buildroot}
 
 %makeinstall
 
@@ -47,5 +48,6 @@ cp -a %{SOURCE1} %{buildroot}/etc/pam.d/%name
 %files
 %defattr(-,root,root)
 %_bindir/*
+%_mandir/man1/neercs.1.*
 /etc/pam.d/%name
 
