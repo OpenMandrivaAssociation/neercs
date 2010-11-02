@@ -1,7 +1,7 @@
 %define name	neercs
 %define version	0.0
 %define svn	4342
-%define release	%mkrel 0.r%svn.1
+%define release	%mkrel 0.r%svn.2
 
 Summary:	Caca screen manager
 Name:		%{name}
