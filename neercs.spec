@@ -12,6 +12,11 @@ Group:		Terminals
 URL:		https://caca.zoy.org/wiki/neercs
 Source0:	%{name}-%{version}.tar.bz2
 Source1:	neercs.pam
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	pam-devel python-devel
 BuildRequires:	libcaca-devel >= 0.99-0.beta17
 
